@@ -1,29 +1,29 @@
 # Define the pizza menu
 menu = {
-    "Margherita": 10,
-    "Pepperoni": 12,
-    "Vegetarian": 11,
-    "Hawaiian": 13,
-    "Meat Lovers": 14
+    "Margherita": 150,
+    "Pepperoni": 180,
+    "Vegetarian": 190,
+    "Hawaiian": 130,
+    "Meat Lovers": 200
 }
 
 # Define the topping menu
 toppings = {
-    "Mushrooms": 1,
-    "Olives": 1,
-    "Onions": 1,
-    "Peppers": 1,
-    "Extra Cheese": 2,
-    "Bacon": 2,
-    "Sausage": 2,
-    "Ham": 2
+    "Mushrooms": 20,
+    "Olives": 20,
+    "Onions": 15,
+    "Peppers": 25,
+    "Extra Cheese": 20,
+    "Bacon": 20,
+    "Sausage": 15,
+    "Ham": 30
 }
 
 # Define a function to display the menu
 def display_menu(menu):
     print("Menu:")
     for item, price in menu.items():
-        print(f"{item} - ${price}")
+        print(f"{item} - Rs {price}")
 
 # Define a function to take the order
 def take_order(menu, toppings):
@@ -77,8 +77,8 @@ def main():
     print("------------------------------------")
     print("Your order:")
     for item, price in order.items():
-        print(f"{item} - ${price}")
-    print(f"Total: ${total}")
+        print(f"{item} - Rs {price}")
+    print(f"Total: Rs {total}")
     print("------------------------------------")
     print("Your details:")
     print(f"Name: {user_details['name']}")
